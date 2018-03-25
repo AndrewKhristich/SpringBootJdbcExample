@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="get.js"></script>
+    <script src="post.js"></script>
+    <script src="findAllNames.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div>
+        <form class="form" id="lineForm">
+            <div class="form">
+                <label for="lineVal">Line:</label>
+                <input type="text" class="form-control" id="lineVal" placeholder="Line Value"/>
+            </div>
+            <button type="submit" class="btn sub" id="subBut">Submit</button>
+        </form>
+    </div>
+
+    <div >
+        <select id="optionalDiv">
+            <option id="idSearch" value="id">Search with ID</option>
+            <option id="nameSearch" value="name">Search with Name</option>
+        </select>
+    </div>
+    <!--<div>-->
+        <input id="search" placeholder="Enter to search">
+        <button id="searchButton" type="button">Search</button>
+    <!--</div>-->
+    <div id="searchLine">
+        <ul class="search" >
+        </ul>
+    </div>
+
+    <div id="ResultDiv">
+    </div>
+    <div>
+        <button id="getAllLines" type="button">Get All Lines</button>
+        <div id="getResultDiv">
+            <ul class="line-list">
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
